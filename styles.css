@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333; /* Dark gray for text */
+    background-color: #f4f0e8; /* Light beige background */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-image: url('https://i.pinimg.com/564x/91/44/81/9144814e2887d515640b3bf20aa3072b.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+header .logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    font-family: 'DM Serif Display', serif;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+header .sign-up {
+    background-color: rgba(94, 89, 70, 0.7);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('https://i.pinimg.com/564x/91/44/81/9144814e2887d515640b3bf20aa3072b.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.4;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about .image-container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 30px; 
+}
+
+.about .image-container img {
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 5px;
+}
+
+.about .text {
+    max-width: 800px;
+    padding: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.about h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: #5E5946; 
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5E5946; 
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for the "about" section */
+@media (max-width: 992px) {
+    .about {
+        padding: 40px 20px;
+    }
+
+    .about .image-container, .about .text {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .about {
+        padding: 20px;
+    }
+
+    .about .image-container, .about .text {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #5E5946;
+    color: #fff;
+    padding: 40px 40px 20px; 
+    text-align: center;
+}
+
+footer .join-us {
+    margin-bottom: 20px; 
+}
+
+footer .join-us p {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .about .image-container, .about .text {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        padding: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    .about {
+        padding: 20px;
+    }
+
+    .about .image-container, .about .text {
+        width: 100%;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        font-size: 12px;
+    }
+}
+
+/* Large desktops */
+@media (min-width: 1200px) {
+    header {
+        padding: 30px 60px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .about {
+        padding: 80px 60px;
+    }
+}
+
+.shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Spacing between items */
+    padding: 40px;
+    background-color: #f4f0e8;
+}
+
+.shop-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shop-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.shop-item h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #5E5946;
+    margin-bottom: 10px;
+}
+
+.shop-item p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .shop {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablet */
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .shop {
+        grid-template-columns: 1fr; /* 1 column on mobile */
+    }
+}
+/* Contact Page Styling */
+.contact {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: #5E5946; /* Muted earthy tone */
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f0e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #5E5946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #494533;
+}
+
+/* Responsive Design for Contact Page */
+@media (max-width: 768px) {
+    .contact {
+        padding: 30px 15px;
+    }
+
+    .contact-form {
+        padding: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+/* Sign Up Page Styling */
+.signup {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.signup h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 28px;
+    color: #5E5946;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f0e8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.signup-form button {
+    background-color: #5E5946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #494533;
+}
+
+/* Responsive Design for Sign Up Page */
+@media (max-width: 768px) {
+    .signup {
+        padding: 30px 15px;
+    }
+
+    .signup-form {
+        padding: 15px;
+    }
+
+    .signup-form input {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
